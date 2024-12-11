@@ -34,11 +34,12 @@
   <div class="popular-section">
     <h3>Mais populares</h3>
     <div class="card-container">
-      <ion-card button="">
+      <ion-card button="" (click)="goToDetails()">
         <img src="assets/cristo_rendentor.webp" alt="Cristo Redentor" />
         <ion-card-header>
           <ion-card-title>Cristo Redentor, Corcovado</ion-card-title>
           <ion-card-subtitle>Rio de Janeiro, RJ</ion-card-subtitle>
+          <ion-button expand="full" color="primary" [routerLink]="['/mapa', { lat: -22.9519, lng: -43.2105 }]">Cristo Redentor</ion-button>
         </ion-card-header>
       </ion-card>
 
@@ -47,6 +48,7 @@
         <ion-card-header>
           <ion-card-title>Praia de Copacabana</ion-card-title>
           <ion-card-subtitle>Rio de Janeiro, RJ</ion-card-subtitle>
+          <ion-button expand="full" color="danger" [routerLink]="['/mapa', { lat: -22.9714, lng: -43.1822 }]">Praia de Copacabana</ion-button>
         </ion-card-header>
       </ion-card>
 
@@ -55,6 +57,7 @@
         <ion-card-header>
           <ion-card-title>Ouro Preto</ion-card-title>
           <ion-card-subtitle>Minas Gerais, MG</ion-card-subtitle>
+          <ion-button expand="full" color="secondary" [routerLink]="['/mapa', { lat: -20.3854, lng: -43.5014 }]">Ouro Preto</ion-button>
         </ion-card-header>
       </ion-card>
 
@@ -63,6 +66,7 @@
         <ion-card-header>
           <ion-card-title>Pão de Açúcar</ion-card-title>
           <ion-card-subtitle>Rio de Janeiro, RJ</ion-card-subtitle>
+          <ion-button expand="full" color="tertiary" [routerLink]="['/mapa', { lat: -22.9480, lng: -43.1566 }]">Pão de Açúcar</ion-button>
         </ion-card-header>
       </ion-card>
 
@@ -71,6 +75,7 @@
         <ion-card-header>
           <ion-card-title>Pelourinho</ion-card-title>
           <ion-card-subtitle>Bahia, BA</ion-card-subtitle>
+          <ion-button expand="full" color="danger" [routerLink]="['/mapa', { lat: -12.9714, lng: -38.5107 }]">Pelourinho</ion-button>
         </ion-card-header>
       </ion-card>
 
@@ -79,6 +84,7 @@
         <ion-card-header>
           <ion-card-title>Cataratas do Iguaçu</ion-card-title>
           <ion-card-subtitle>Paraná, PR</ion-card-subtitle>
+          <ion-button expand="full" color="success" [routerLink]="['/mapa', { lat: -25.6953, lng: -54.4367 }]">Cataratas do Iguaçu</ion-button>
         </ion-card-header>
       </ion-card>
 
@@ -87,6 +93,7 @@
         <ion-card-header>
           <ion-card-title>Gruta do Lago Azul</ion-card-title>
           <ion-card-subtitle>Mato Grosso do Sul, MS</ion-card-subtitle>
+          <ion-button expand="full" color="light" [routerLink]="['/mapa', { lat: -14.7173, lng: -56.3953 }]">Gruta do Lago Azul</ion-button>
         </ion-card-header>
       </ion-card>
 
@@ -95,8 +102,24 @@
         <ion-card-header>
           <ion-card-title>Jardim Botânico</ion-card-title>
           <ion-card-subtitle>Curitiba, PR</ion-card-subtitle>
+          <ion-button expand="full" color="warning" [routerLink]="['/mapa', { lat: -25.4284, lng: -49.2672 }]">Jardim Botânico Curitiba</ion-button>
         </ion-card-header>
       </ion-card>
+
+     
+
+     
+      
+      
+      <ion-button expand="full" color="light" [routerLink]="['/mapa', { lat: -13.4717, lng: -38.2904 }]">Praia do Garapúa</ion-button>
+      <ion-button expand="full" color="dark" [routerLink]="['/mapa', { lat: -2.3800, lng: -42.8136 }]">Praias dos Lençóis Maranhenses</ion-button>
+      <ion-button expand="full" color="medium" [routerLink]="['/mapa', { lat: -23.0086, lng: -44.2464 }]">Praia do Farol</ion-button>
+      <ion-button expand="full" color="primary" [routerLink]="['/mapa', { lat: -6.4311, lng: -35.1054 }]">Praia da Bía dos Golfinhos</ion-button>
+      <ion-button expand="full" color="secondary" [routerLink]="['/mapa', { lat: -7.1111, lng: -34.8689 }]">Praia dos Porcos</ion-button>
+      <ion-button expand="full" color="tertiary" [routerLink]="['/mapa', { lat: -3.1324, lng: -40.4877 }]">Praia da Lagoa do Paraíso</ion-button>
+      
+      <ion-button expand="full" color="success" [routerLink]="['/mapa', { lat: -23.0217, lng: -43.5896 }]">Praia de Grumari</ion-button>
+      <ion-button expand="full" color="warning" [routerLink]="['/mapa', { lat: -22.9837, lng: -43.1994 }]">Praia de Ipanema</ion-button>
     </div>
   </div>
 </ion-content>

@@ -24,4 +24,7 @@ export class InicialPage {
   goToTrilhas() {
     this.router.navigate(['conteudo/inicial/trilhas']);
   }
+  goToDetails() {
+    this.router.navigate(['conteudo/inicial/detalhes']);
+  }
 }
